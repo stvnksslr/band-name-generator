@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from main import get_band_name
+from app.band_name_generator import get_band_name
 
 
 class BandNameGeneratorTest(TestCase):
