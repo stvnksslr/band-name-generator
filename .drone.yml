@@ -1,0 +1,19 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: Lint
+    image: python:3.7
+    commands:
+      - pip install --upgrade pip
+      - pip install flake8
+      - flake8
+
+  - name: Test
+    image: python:3.7
+    environment:
+    commands:
+      - pip install --upgrade pip
+      - pip install pipenv
+      - pipenv install --dev --system
+      - pytest .
