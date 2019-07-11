@@ -1,3 +1,4 @@
+---
 kind: pipeline
 name: default
 
@@ -17,3 +18,8 @@ steps:
       - pip install pipenv
       - pipenv install --dev --system
       - pytest .
+---
+kind: signature
+hmac: 4a23eadbc0208cc56a36dd87a0a68170701d0cbb6eed3c609a785972954cc478
+
+...
